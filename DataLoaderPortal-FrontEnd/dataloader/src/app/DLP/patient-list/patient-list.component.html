@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="title-bar">
+        <div class="title">
+            <h1><p class="list">Patient List</p></h1>
+        </div>
+    </div>
+<br>
+    <div class="mt-5">
+        <table class="tab" >
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Patient Id</th>
+                    <th scope="col">Patient Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col">Email Id</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Drug Id</th>
+                    <th scope="col">Drug Name</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let patient of patients">
+                    <th scope="row">{{patient.id}}</th>
+                    <td>{{patient.name}}</td>
+                    <td>{{patient.address}}</td>
+                    <td>{{patient.dob}}</td>
+                    <td>{{patient.email}}</td>
+                    <td>{{patient.phone}}</td>
+                    <td>{{patient.prescription.patientDrugId}}</td>
+                    <td>{{patient.prescription.patientDrugName}}</td>
+                    <td>{{patient.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

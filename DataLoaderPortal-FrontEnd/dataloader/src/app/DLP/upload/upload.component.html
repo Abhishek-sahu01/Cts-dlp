@@ -1,0 +1,17 @@
+<div class="container col-3" style="margin-top: auto;">
+    <h1 class="style">Upload an Excel file</h1>
+
+    <div class="border border-light rounded p-3">
+        <form #loginForm="ngForm" (ngSubmit)="onUpload()">
+            <div class="form-group">
+                <label for="file"></label>
+                <input type="file" accept=".csv" (change)="handleFileSelect($event)">
+                <input type="submit" onclick=" successfullyuploaded()" value="Upload" class="btn btn-primary">
+            </div>
+
+            <div class="row container-fluid text-danger" id="divshow">
+                {{message}}
+            </div>
+        </form>
+</div>
+

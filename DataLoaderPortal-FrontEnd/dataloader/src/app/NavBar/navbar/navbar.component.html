@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" *ngIf="nav.visible">
+    <div class="container">
+        <a class="navbar-brand" href="#">HOME</a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="uploadPage" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">UPLOAD</a>
+                </li>
+                <li class="nav-item2">
+                    <a class="nav-link" routerLink="patientListPage" >PATIENT LIST</a>
+                </li>
+                <li class="nav-item3">
+                    <a class="nav-link" routerLink="updatePatientPage" >UPDATE</a>
+                </li>
+                <li class="nav-item4">
+                    <a class="nav-link" routerLink="processListPage" >PROCESS</a>
+                <!-- </li> <li class="nav-item5">
+                    <a class="nav-link" routerLink="loginpage" >Logout</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
